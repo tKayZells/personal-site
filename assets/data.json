@@ -1,0 +1,27 @@
+{
+    "projects" : [
+        {
+            "title" : "Pokedex",
+            "tags"  : [ "Vue", "Tailwindcss", "API", "Responsive" ],
+            "description" : "Build using vuejs and PokeAPI, with lazy loading of images for fast initial load time.",
+            "image" : "./projects/vue-dex.png",
+            "source_url" : "https://github.com/tKayZells/pokedex-vue-app",
+            "demo_url" : "https://tkayzells.github.io/pokedex-vue-app/"
+        },
+        {
+            "title" : "Cookbook",
+            "tags"  : [ "React", "Tailwindcss", "Responsive" ],
+            "description" : "Small CRUD React app to store cook recipes ingredients and instructions.",
+            "image" : "./projects/react-book.png",
+            "source_url" : "https://github.com/tKayZells/react-cookbook",
+            "demo_url" : "https://tkayzells.github.io/react-cookbook/"
+        },
+        {
+            "title" : "Lodging-it",
+            "tags"  : [ "Laravel", "Tailwindcss", "Vue", "PostgreSQL" ],
+            "description" : "A W.I.P hotel reservation system and booking engine using Laravel.",
+            "image" : "./projects/lodging-it.png",
+            "source_url" : "https://github.com/tKayZells/lodging-it"
+        }
+    ]
+}
