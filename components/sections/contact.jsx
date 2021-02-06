@@ -2,6 +2,7 @@ import Section from "../html/section";
 import Social from "../html/social";
 import Input from "../html/form/input";
 import Text from "../html/form/text";
+import style from '../../styles/contact.module.scss';
 
 export default function Contact(){
     return (
@@ -26,7 +27,7 @@ export default function Contact(){
             <div className="sm:py-6 sm:my-6 flex justify-between flex-col md:flex-row">
                 
                 <span className="text-white font-thin p-2 m-2 text-base md:text-2xl md:text-left text-right"> 
-                    <a className="inline-flex" target="_blank" href="./cv/Miguel_CV.pdf">CV Download <img className="ml-4" src="./link.svg" /> </a>
+                    <a className={"inline-flex " + style.underline }target="_blank" href="./cv/Miguel_CV.pdf">CV Download <img className="ml-4" src="./link.svg" /> </a>
                 </span>
                 
                 <Social className="justify-end md:justify-center" />

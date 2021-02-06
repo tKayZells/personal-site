@@ -2,7 +2,7 @@ export default function ScrollIndicator(){
 
     return (
         <div className="container mx-auto relative">
-            <div className="text-center absolute w-full bottom-6">
+            <div className="text-center absolute w-full bottom-6 animate-bounce">
                 <span className="text-white mb relative">Scrolldown for more info</span>
                 <svg width="42.761" height="48.047" viewBox="0 0 42.761 48.047" className="mx-auto mt-4">
                     <g id="Icon_feather-chevrons-down" data-name="Icon feather-chevrons-down" transform="translate(-18.619 -15.286)">

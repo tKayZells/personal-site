@@ -1,0 +1,8 @@
+@import "mixins/underline";
+
+@include underline(#fff);
+
+.bg {
+    background: #111827;
+    z-index: 1;
+}
