@@ -11,7 +11,6 @@ export default function Navigation(){
                         <li className="p-2 m-2" ><a className={ style.underline } href="#projects">projects</a></li>
                         <li className="p-2 m-2"><a className={ style.underline } href="#contact">contact</a></li>
                     </ul>
-                    <span className="self-center">M&aacute;laga - Spain</span>
                 </nav>
             </div>
         </header>

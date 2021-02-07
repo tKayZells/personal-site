@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Fragment from 'react';
+import { Fragment, useEffect, createRef } from 'react';
 import Navigation from '../components/html/navigation';
 import ScrollIndicator from '../components/html/scrollindicator';
 import About from '../components/sections/about';
@@ -9,6 +9,20 @@ import Projects from '../components/sections/projects';
 import Skills from '../components/sections/skills';
 
 export default function Home() {
+  
+  const scrollRef = createRef();
+
+  useEffect( () =>{
+    
+    import("locomotive-scroll").then( locomotivemodule => {
+      const scroll = new locomotivemodule.default({
+          el: scrollRef.current, 
+          smooth: true
+      });
+    });
+
+  });
+
   return (
     <>
       <Head>
@@ -25,24 +39,21 @@ export default function Home() {
 
       <Navigation />
 
-      <main>
+      <main ref={ scrollRef } className="relative" data-scroll-container >
         
         <Intro />
-        <ScrollIndicator />
 
         <About />
 
         <Skills />
 
         <Projects />
+        
+
+        <Contact />
 
       </main>
 
-      <footer>
-
-        <Contact />
-      
-      </footer>
     </>
   )
 }
