@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Fragment, useEffect, createRef } from 'react';
+import { Fragment, useEffect, useState, createRef } from 'react';
 import Navigation from '../components/html/navigation';
 import ScrollIndicator from '../components/html/scrollindicator';
 import About from '../components/sections/about';
@@ -8,6 +8,10 @@ import Intro from '../components/sections/intro';
 import Projects from '../components/sections/projects';
 import Skills from '../components/sections/skills';
 
+
+let locomotiveScroll = {};
+const ScrollToTarget = ( target ) => locomotiveScroll.scrollTo( target, {} );
+
 export default function Home() {
   
   const scrollRef = createRef();
@@ -15,10 +19,19 @@ export default function Home() {
   useEffect( () =>{
     
     import("locomotive-scroll").then( locomotivemodule => {
-      const scroll = new locomotivemodule.default({
+
+      locomotiveScroll = new locomotivemodule.default({
           el: scrollRef.current, 
           smooth: true
       });
+      
+      locomotiveScroll.on("call", (args) => {
+        if( args === "about-social")
+        {
+          console.log("visible");
+        }
+      })
+
     });
 
   });
@@ -37,7 +50,7 @@ export default function Home() {
         <meta property="og:image" content="/og/portfolio.png" />
       </Head>
 
-      <Navigation />
+      <Navigation scrollTargetEvent={ ScrollToTarget } />
 
       <main ref={ scrollRef } className="relative" data-scroll-container >
         

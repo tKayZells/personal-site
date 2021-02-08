@@ -30,7 +30,7 @@ export default function Contact(){
                     <a className={"inline-flex " + style.underline }target="_blank" href="./cv/Miguel_CV.pdf">CV Download <img className="ml-4" src="./link.svg" /> </a>
                 </span>
                 
-                <Social className="justify-end md:justify-center" />
+                <Social id="contact-social"  className="justify-end md:justify-center" />
                 
             </div>
         </Section>

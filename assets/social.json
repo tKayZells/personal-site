@@ -1,0 +1,16 @@
+{
+    "social" : [
+        { 
+            "url": "https://www.linkedin.com/in/miguel-lucena-a6466250/", 
+            "text" : "Linkedin"
+        },
+        {
+            "url": "https://github.com/tKayZells", 
+            "text" : "Github"
+        },
+        { 
+            "url": "https://twitter.com/TZells", 
+            "text" : "Twitter" 
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+@mixin fadeInLeftAnimation {
+    
+    .fadeInLeftBase {
+        opacity: 0;
+        transform: translateX(80px);
+        transition: 1s;
+    }
+
+    .fadeInLeftScroll {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}

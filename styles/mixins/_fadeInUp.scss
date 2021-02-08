@@ -1,0 +1,14 @@
+@mixin fadeInUpAnimation {
+    
+    .fadeInUpBase {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: 0.7s;
+    }
+
+    .fadeInUpOnScroll {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}

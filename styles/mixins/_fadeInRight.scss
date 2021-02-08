@@ -1,0 +1,14 @@
+@mixin fadeInRightAnimation {
+    
+    .fadeInRightBase {
+        opacity: 0;
+        transform: translateX(-80px) ;
+        transition: 1s;
+    }
+
+    .fadeInRightScroll {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
