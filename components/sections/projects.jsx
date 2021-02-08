@@ -1,13 +1,17 @@
 import Section from "../html/section";
 import Card from "../html/card"
 import data from "../../assets/data";
+import style from '../../styles/projects.module.scss';
 
 export default function Projects(){
 
     return (
         <Section id="projects">
 
-            <h3 className="md:text-7xl text-3xl text-purple-600 font-bold p-2 my-2 md:my-16 text-left md:text-right">PROJECTS I'VE MADE</h3>
+            <h3 className={"md:text-7xl text-3xl text-purple-600 font-bold p-2 my-2 md:my-16 text-left md:text-right " + style.fadeInUpBase }
+                data-scroll data-scroll-class={ style.fadeInUpOnScroll } data-scroll-repeat="true">
+                PROJECTS I'VE MADE
+            </h3>
 
             <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-10 p-2">
 

@@ -1,3 +1,13 @@
 @import "mixins/underline";
 
 @include underline(#000);
+
+.card_base {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.75s;
+}
+
+.card_scroll {
+    transform: scaleX(100%);
+}
