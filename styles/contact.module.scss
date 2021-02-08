@@ -1,3 +1,7 @@
 @import "mixins/underline";
+@import "mixins/fadeInUp";
+@import "mixins/fadeInRight";
 
 @include underline(#fff);
+@include fadeInUpAnimation();
+@include fadeInRightAnimation();

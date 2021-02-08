@@ -7,7 +7,10 @@ import style from '../../styles/contact.module.scss';
 export default function Contact(){
     return (
         <Section id="contact">
-            <h3 className="md:text-7xl text-3xl text-purple-600 font-bold p-2 my-8 text-center">SEND ME A MESSAGE</h3>
+            <h3 className={"md:text-7xl text-3xl text-purple-600 font-bold p-2 my-8 text-center " + style.fadeInUpBase}
+                data-scroll data-scroll-class={ style.fadeInUpOnScroll } data-scroll-repeat="true">
+                SEND ME A MESSAGE</h3>
+
             <form className="w-full max-w-lg mx-auto p-8" action="https://formspree.io/f/moqpbldj" method="POST">
                 <div className="flex flex-wrap -mx-3 mb-6">
                     <Input name="name" type="text" label="Name" id="name" />      
@@ -26,7 +29,9 @@ export default function Contact(){
             </form>
             <div className="sm:py-6 sm:my-6 flex justify-between flex-col md:flex-row">
                 
-                <span className="text-white font-thin p-2 m-2 text-base md:text-2xl md:text-left text-right"> 
+                <span className={"text-white font-thin p-2 m-2 text-base md:text-2xl md:text-left text-right " + style.fadeInRightBase} 
+                    data-scroll data-scroll-class={ style.fadeInRightScroll } data-scroll-repeat="true"> 
+
                     <a className={"inline-flex " + style.underline }target="_blank" href="./cv/Miguel_CV.pdf">CV Download <img className="ml-4" src="./link.svg" /> </a>
                 </span>
                 

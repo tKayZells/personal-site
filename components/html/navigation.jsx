@@ -1,9 +1,14 @@
+import { React, useEffect } from "react";
 import style from '../../styles/navigation.module.scss';
 
 export default function Navigation( props ){
     
+    useEffect( ()=> {
+        window.addEventListener('scroll', () => console.log("scroll"));
+    }, [])
+
     return (
-        <header className="fixed w-full z-10">
+        <header id="header" className="fixed w-full z-10" data-direction>
             <div className="container mx-auto text-white">
                 <nav className="flex justify-between p-4 font-thin text-base md:text-2xl">
                     <ul className="flex flex-row">

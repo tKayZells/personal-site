@@ -22,15 +22,13 @@ export default function Home() {
 
       locomotiveScroll = new locomotivemodule.default({
           el: scrollRef.current, 
-          smooth: true
+          smooth: true,
+          getDirection: true
       });
       
-      locomotiveScroll.on("call", (args) => {
-        if( args === "about-social")
-        {
-          console.log("visible");
-        }
-      })
+      locomotiveScroll.on('scroll', (instance) => {
+        document.documentElement.setAttribute('data-direction', instance.direction)
+      });
 
     });
 
