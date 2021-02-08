@@ -15,7 +15,6 @@ export default function Social(props){
             targets: `li.social_${index}`, 
             translateX: 0,
             opacity : 1
-        
         });
 
         return (

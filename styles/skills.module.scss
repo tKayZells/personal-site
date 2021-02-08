@@ -1,0 +1,5 @@
+@import "mixins/fadeInUp";
+@import "mixins/fadeInRight";
+
+@include fadeInUpAnimation();
+@include fadeInRightAnimation();
