@@ -6,10 +6,8 @@ export default function About() {
     return (
         <Section id="about">
             <div className="flex flex-col-reverse lg:flex-row">
-                <div className="flex-1 w-4/5 mx-auto p-4">
-                    <img 
-                        data-scroll data-scroll-class={ style.img_scroll }
-                        className={"mx-auto md:w-4/5 sm:w-full " + style.img_base}
+                <div className={"flex-1 w-4/5 mx-auto p-4 "+ style.fadeInRightScroll} data-scroll data-scroll-class={ style.fadeInRightBase }>
+                    <img className="mx-auto md:w-4/5 sm:w-full"
                         src="./profile.jpg"
                         alt="cool profile picture"
                     />

@@ -1,15 +1,7 @@
 @import "mixins/fadeInUp";
 @import "mixins/fadeInLeft";
+@import "mixins/fadeInRight";
 
 @include fadeInUpAnimation();
 @include fadeInLeftAnimation();
-
-.img_base {
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: 0.75s;
-}
-
-.img_scroll {
-    transform: scaleX(100%);
-}
+@include fadeInRightAnimation();

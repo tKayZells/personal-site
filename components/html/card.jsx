@@ -11,7 +11,7 @@ export default function Card(props){
     }
 
     return (
-        <div className={ "p-4 bg-gray-800 rounded-lg " + style.card_base } data-scroll data-scroll-class={ style.card_scroll }>
+        <div className={ "p-4 bg-gray-800 rounded-lg " + style.fadeInRightBase } data-scroll data-scroll-class={ style.fadeInRightScroll }>
             
             <div className="relative max-h-80 overflow-hidden rounded-l">
                 <img src={ props.image } alt={ props.title }  className="w-full object-cover object-center rounded-lg shadow-md" />    
