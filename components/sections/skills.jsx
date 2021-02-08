@@ -16,7 +16,7 @@ export default function Skills(){
     let group = 1;
     const skillsDom = skills.map( (el, index) => { 
 
-        const dom = <li key={ index } className={ "p-2 m-2 skill_group_" + group + " " + style.fadeInRightBase } style={{ 'transform' : 'translateX(-120px)' }}> { el } </li>;
+        const dom = <li key={ index } className={ "p-2 m-2 skill_group_" + group + " " + style.fadeInRightBase } style={{ 'transform' : 'translateX(-120px)', 'opacity' : 0 }}> { el } </li>;
 
         if ( (index + 1) % elemPerGroup == 0) {
             group++;
