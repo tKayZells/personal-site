@@ -6,7 +6,7 @@ export default function Card(props){
     if ( props.demo_url )
     {
         demoLink = ( <span className="font-thin text-base ml-6"> 
-                        <a className={ "inline-flex " + style.underline } href={ props.demo_url } target="_blank" >Demo <img className="ml-1 w-4" src="./link_2.svg" /> </a>
+                        <a className={ "inline-flex " + style.underline } href={ props.demo_url } target="_blank" >Demo <img className="ml-1 w-4" alt="link-image" src="./link_2.svg" /> </a>
                      </span> );
     }
 
@@ -36,7 +36,7 @@ export default function Card(props){
                     <div className="mt-4">
                         
                         <span className="font-thin text-base"> 
-                            <a className={ "inline-flex " + style.underline } href={ props.source_url } target="_blank" >Source <img className="ml-1 w-4" src="./link_2.svg" /> </a>
+                            <a className={ "inline-flex " + style.underline } href={ props.source_url } target="_blank" >Source <img className="ml-1 w-4" alt="link-image" src="./link_2.svg" /> </a>
                         </span>
 
                         { demoLink }

@@ -32,7 +32,7 @@ export default function Contact(){
                 <span className={"text-white font-thin p-2 m-2 text-base md:text-2xl md:text-left text-right " + style.fadeInRightBase} 
                     data-scroll data-scroll-class={ style.fadeInRightScroll } data-scroll-repeat="true"> 
 
-                    <a className={"inline-flex " + style.underline }target="_blank" href="./cv/Miguel_CV.pdf">CV Download <img className="ml-4" src="./link.svg" /> </a>
+                    <a className={"inline-flex " + style.underline }target="_blank" href="./cv/Miguel_CV.pdf">CV Download <img className="ml-4" alt="link-image" src="./link.svg" /> </a>
                 </span>
                 
                 <Social id="contact-social"  className="justify-end md:justify-center" />

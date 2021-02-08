@@ -20,7 +20,7 @@ export default function Social(props){
         return (
             <li key={ index } className={"p-2 m-2 text-base md:text-2xl social_" + ( index ) + " " + style.fadeInRightBase } style={{ 'transform' : 'translateX(-80px)', 'opacity' : 0 }}  >
                 <a className={ `inline-flex font-thin hover:italic ` + style.underline } target="_blank" href={ el.url }>
-                    <span className="mx-4">{ el.text } </span> <img src="./link.svg" /> 
+                    <span className="mx-4">{ el.text } </span> <img alt="link-image" src="./link.svg" /> 
                 </a>
             </li>
         )

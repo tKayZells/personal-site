@@ -3,10 +3,6 @@ import style from '../../styles/navigation.module.scss';
 
 export default function Navigation( props ){
     
-    useEffect( ()=> {
-        window.addEventListener('scroll', () => console.log("scroll"));
-    }, [])
-
     return (
         <header id="header" className="fixed w-full z-10" data-direction>
             <div className="container mx-auto text-white">

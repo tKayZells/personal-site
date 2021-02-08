@@ -17,7 +17,8 @@ export default function Home() {
   const scrollRef = createRef();
 
   useEffect( () =>{
-    
+    document.documentElement.lang = "en";
+
     import("locomotive-scroll").then( locomotivemodule => {
 
       locomotiveScroll = new locomotivemodule.default({
@@ -32,12 +33,13 @@ export default function Home() {
 
     });
 
-  });
+  }, []);
 
   return (
     <>
       <Head>
         <title>Miguel Lucena - Web App Developer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="author" content="Miguel Lucena" />
         <meta name="description" content="Hi, I'm Miguel Lucena a web app developer, currently located in M&aacute;laga, Spain." />
