@@ -54,7 +54,7 @@ export default function Home() {
 
       <main ref={ scrollRef } className="relative" data-scroll-container >
         
-        <Intro />
+        <Intro scrollTargetEvent={ ScrollToTarget }/>
 
         <About />
 
