@@ -19,9 +19,9 @@ export default function About() {
                                 HELLO WORLD
                         </h3>
                         <p className="md:text-2xl text-lg text-white font-thin p-2 my-4 ">
-                            <span className={ "inline-block " + style.fadeInLeftBase } data-scroll data-scroll-class={ style.fadeInLeftScroll } data-scroll-repeat="true" >Hi, I'm Miguel Lucena a web app developer, based in M&aacute;laga, Spain,</span>
+                            <span className={ "inline-block " + style.fadeInLeftBase } data-scroll data-scroll-class={ style.fadeInLeftScroll } data-scroll-repeat="true" >Hi, I'm Miguel Lucena a web developer, based in M&aacute;laga - Spain!</span>
                             <span className={ "inline-block " + style.fadeInLeftBase } data-scroll data-scroll-class={ style.fadeInLeftScroll } data-scroll-repeat="true">diligently honing my frontend & backend skills.</span>
-                            <span className={ "inline-block " + style.fadeInLeftBase } data-scroll data-scroll-class={ style.fadeInLeftScroll } data-scroll-repeat="true">Actively looking for job offers in the web app development area.</span>
+                            <span className={ "inline-block " + style.fadeInLeftBase } data-scroll data-scroll-class={ style.fadeInLeftScroll } data-scroll-repeat="true">looking for oportunities to develop creative solutions.</span>
                         </p>
                     </div>
                     <div className="mb-10">
